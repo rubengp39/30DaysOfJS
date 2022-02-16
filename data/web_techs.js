@@ -7,3 +7,6 @@ const webTechs = [
     'Node',
     'MongoDB'
 ]
+
+
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
