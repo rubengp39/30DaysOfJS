@@ -76,4 +76,25 @@ function day5() {
     shoppingCart.splice(3, 4)
 
     console.log(shoppingCart)
+
+    //E3.-
+    const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+    ages.sort()
+    console.log(ages[0], ages[ages.length - 1])
+    let sum = 0
+    ages.forEach(element => {
+        sum += element
+    });
+    console.log(sum / ages.length - 1)
+    console.log(ages[ages.length - 1] - ages[0])
+    console.log(Math.abs(ages[0] - sum / ages.length - 1), Math.abs([ages[ages.length - 1] - sum / ages.length - 1]))
+        /*
+            countries.splice(0, 10)
+            console.log(countries)
+        */
+    const mid = Math.ceil(countries.length / 2)
+    const firstHalf = countries.splice(0, mid)
+    const secondHalf = countries.splice(-mid)
+    console.log(firstHalf)
+    console.log(secondHalf)
 }
